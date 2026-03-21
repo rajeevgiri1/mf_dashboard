@@ -23,8 +23,14 @@ if theme == "Dark":
 # ==============================
 # TITLE
 # ==============================
-st.title("📊 MUTUAL FUND - Kaunsa Din Sahi Hai")
-st.markdown("### 💡 Sahi din choose karo, returns improve karo!")
+col1, col2 = st.columns([2, 8])
+
+with col1:
+    st.image("logo.png", width=250)
+
+with col2:
+    st.title("📊 MUTUAL FUND - Kaunsa Din Sahi Hai!?")
+    st.markdown("### 💡 Sahi din choose karo, returns improve karo!")
 
 # ==============================
 # LOAD DATA
